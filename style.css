@@ -7,17 +7,12 @@ body{
 }
 .main{
     background-color: white;
-    width: 80%;
+    width: 70%;
     margin: 5vw auto;
     height: auto;
     border-radius: 9px;
     /* padding: 17px 50px; */
 }
-/* @media (max-width: 800px){
-    .main{
-        margin-top: 20px;
-    }
-} */
 #center{
     position: relative;
     height: 100%;
@@ -33,7 +28,7 @@ body{
     display: flex;
 }
 .fa{
-    font-size: 10px;
+    font-size: 3vw;
     display:none;
 }
 .hamburgerMenu{
@@ -50,9 +45,8 @@ body{
     transition: 0.5s; /*effects on slide in*/
 }
 .hamburgerMenu a{
-    text-decoration: none;
     padding: 8px 8px 8px 32px;
-    font-size: 15px; /*change to vw*/
+    /* font-size: 15px; change to vw */
     color: #818181;
     display: block;
     transition: 0.1s ease-in-out;
@@ -69,13 +63,13 @@ body{
 /* TODO not working */
 @media (max-width: 800px){
     .workDiv{
-        display: none;
+        display: none !important;
     }
 }
 
 .workDiv{
-    display: none;
-    /* display: flex; */
+    display: flex;
+    align-items: center;
     flex-direction: row;
     padding: 0;
     margin: 0;
@@ -104,7 +98,8 @@ body{
 img{
     border-radius: 3px;
     max-width: 100%;
-
+    object-fit: cover !important;
+    width: 100%;
 }
 #td1{
     vertical-align: top;
@@ -115,21 +110,22 @@ img{
     color: grey;
     margin: 0;
 }
-#ansContent p{
+/* #ansContent p{
     font-size: 2.1vw;
-}
-#ansContent h1{
+} */
+/* #ansContent h1{
     font-size: 3.5vw;
-}
+} */
 #ansContent{
    
 }
 .butn{
+    margin-left: 0.4vw;
     background-color: #f46827;
     border-style: hidden;
     border-radius: 1.5px;
-    padding: 4px 20px;
-    font-size: 1.8vw;
+    padding: 0.2vw 2vw;
+    font-size: 1.5vw;
     color: white;
 }
 .butn:hover{
@@ -155,18 +151,53 @@ button:focus{
 .ansContent{
     cursor: pointer;
 }
-.contentImg{
-    
+.contentImg img{
+    max-height: 400px;
 }
 
 a{
-    font-size: 1.8vw;
+    text-decoration: none !important;
+    font-size: 1.4vw;
+    padding: 0 0.4vw;
 }
 
 #butn{
+  
     padding-right: 0;
 }
-
 h1{
     margin-top: 0;
+}
+.para{
+    margin-top: 1rem;
+}
+@media only screen and (max-width: 768px){
+    p{font-size: 0.8rem;}
+    h1{
+        font-size:calc(1.175rem + 1.5vw);
+    }
+    h5{
+        font-size: calc(0.8rem + 1.5vw);
+    }
+}
+/* @media only screen and (min-width:1200px){
+    .contentImg img{
+        height: 70vh;
+    }
+} */
+
+.row2 .contentImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.row2 .ansContent{
+    width: 100%;
+}
+.espanolImg{
+    max-height: 300px !important;
+}
+.otherImg{
+    max-height: 300px !important;
+
 }
