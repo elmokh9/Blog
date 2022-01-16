@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-5 contentImg pb-2 pb-sm-5 mb-sm-5"><img src="image\IMG_20210604_215538_533.jpg"></img></div>
+                    <div class="col-sm-5 contentImg pb-2 pb-sm-5 mb-sm-5"><img src="E:\codeeee\my website\image\IMG_20210604_215538_533.jpg"></img></div>
                     <div class="ansContent blog1 col-sm-7 mb-sm-3 mb-5">
                         <p class="ansContHead ">October 14 2021</p>
                         <h1 class="">Piano, novels and reels <small class="text-muted">Bringing my imagination to reality</small></h1> 
@@ -60,9 +60,17 @@
                         </h5>
                     </div>
                 </div>
+                <div class="flex-img row">
+                    <div class="fleximg1 col-sm-6 pb-2">
+                        <img class="otherImg" src="E:\codeeee\my website\image\originals.jpg"></img>
+                       
+                    </div>
+                    <div class="fleximg2 col-sm-6 pb-2">
+                        <img class="espanolImg" src="E:\codeeee\my website\image\espanol.jpg"></img>
+                    </div>
+                </div>
                 <div class="row row2">
-                    <div class="col-sm-6"> 
-                        <div class="col-sm-5 contentImg pb-2"><img class="otherImg" src="image\originals.jpg"></img></div>
+                    <div class="col-sm-6 ytContent"> 
                         <div class="ansContent blog2 col-sm-7 mb-sm-3 mb-5">
                             <p class="ansContHead ">October 14 2021</p>
                             <h1 class="">What did I <i>not</i> learn from my YouTube endeavour</h1> 
@@ -73,8 +81,7 @@
                             </h5>
                         </div>
                     </div>
-                    <div class="col-sm-6"> 
-                        <div class="col-sm-5 contentImg pb-2"><img class="espanolImg" src="image\espanol.jpg"></img></div>
+                    <div class="col-sm-6 spanishCont"> 
                         <div class="ansContent blog3 col-sm-7 mb-sm-3 mb-5">
                             <p class="ansContHead ">October 14 2021</p>
                             <h1 class="">Spanish and Me<br> <small class="text-muted">a long love affair</small></h1> 
@@ -91,29 +98,26 @@
             </div>
         </div>
     </div>
+        
+    <script src="working.js"></script>
     <script type="module">
         // Import the functions you need from the SDKs you need
-        // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
-        // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-analytics.js";
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
       
         // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        // const firebaseConfig = {
-        //   apiKey: "AIzaSyDzT2K3miPcY_vLXp09FG1OHPbLw2bizL4",
-        //   authDomain: "myblog-6803f.firebaseapp.com",
-        //   projectId: "myblog-6803f",
-        //   storageBucket: "myblog-6803f.appspot.com",
-        //   messagingSenderId: "108091494610",
-        //   appId: "1:108091494610:web:0d3e021e59f5e87eb7dd0b",
-        //   measurementId: "G-8FZR0DYSVN"
-        // };
+        const firebaseConfig = {
+          apiKey: "AIzaSyDAnaGVVMqjDL71pRlOmRL0hsRBouCXgno",
+          authDomain: "myblog-bbc58.firebaseapp.com",
+          projectId: "myblog-bbc58",
+          storageBucket: "myblog-bbc58.appspot.com",
+          messagingSenderId: "768993060920",
+          appId: "1:768993060920:web:5317e2bc018a8a9cd25ecd"
+        };
       
         // Initialize Firebase
-    //     const app = initializeApp(firebaseConfig);
-    //     const analytics = getAnalytics(app);
-    //</script>
-    <script src="working.js"></script>
+        const app = initializeApp(firebaseConfig);
+      </script>
 </body>
 </html>

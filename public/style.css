@@ -191,6 +191,7 @@ h1{
     display: flex;
     justify-content: center;
 }
+/* TODO  */
 .row2 .ansContent{
     width: 100%;
 }
@@ -201,3 +202,20 @@ h1{
     max-height: 300px !important;
 
 }
+.contentImg .img{
+    height: 100% !important;
+}
+.flex-img img{
+    height: 100% !important;
+    width: 100%;
+}
+@media only screen and (max-width: 574px){
+    .flex-img img{
+        height: auto !important;
+    }
+}
+/* @media only screen and (max-width: 930px){
+    .flex-img img{
+        height: auto !important;
+    }
+} */
