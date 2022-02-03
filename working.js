@@ -9,7 +9,9 @@ $(document).ready(function() {
     $(".projects").click(()=>{
         window.location.href = "blog1.html";
     })
-    
+    $(".home").click(()=>{
+        window.location.href = "index.html";
+    })
     $(".ansContent").click((value)=>{
         let classN = value.currentTarget.classList[1];
         console.log(classN);
@@ -43,8 +45,6 @@ function changeOrder() {
         //to set it back to where it was
         obj.insertBefore(spanishCont);
     }
-
-
 }
 // to run when browser resized
 window.matchMedia(width).addEventListener("change", changeOrder);
@@ -52,10 +52,3 @@ window.matchMedia(width).addEventListener("change", changeOrder);
 function open(){
     $(".hamburgerMenu").width("100%");
 }
-
-// var workEl = document.querySelector("#workDiv");
-//     workEl.onclick = function(){
-//         window.alert("hello");
-//         document.querySelector("#work").style.background = "yellow";
-//     }
-// document.querySelector("button").onmouseover
